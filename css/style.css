@@ -41,16 +41,16 @@ li {
 
     --btn_primary-color: #ffffff;
 
-    --el_primary-color:#a3a3a3;
-    --el_primary-color-light:#c1c1c1;
-    --el_primary-color-dark:#5a5a5a;
+    --el_primary-color: #a3a3a3;
+    --el_primary-color-light: #c1c1c1;
+    --el_primary-color-dark: #5a5a5a;
 
     --el_thirdary-color: #adff2f;
 
     --txt_primary-color-dark: #7b7e82;
     --txt_primary-color: #a3a3a3;
     --txt_primary-color-light: #ffffff;
-   
+
 
 }
 
@@ -65,15 +65,18 @@ li {
 /*****************************
         CLASS-UTILITIES
 ******************************/
+
+/* *********row & col********** */
+
 .row {
     display: flex;
 }
+
 .row>* {
     border: 1px solid greenyellow;
 }
 
-
-
+col
 /* *********size-icon********** */
 
 .s-i_xs:;
@@ -81,13 +84,50 @@ li {
 .s-i_m:;
 .s-i_l:;
 
-.divider{
-    width:1px solid var(--el_primary-color-dark) ;
+
+/* *********size-icon********** */
+.f-s_xs:;
+.f-s_s:;
+.f-s_m:;
+.f-s_l:;
+
+.upper {
+    text-transform: uppercase;
 }
 
+.divider {
+    width: 1px solid var(--el_primary-color-dark);
+}
+
+
+
+
+
+
+
+
+
 /*****************************
-        CLASS-UTILITIES
+            ASIDE
 ******************************/
+
+
+
+
+/*****************************
+        MAIN SECTIONS
+******************************/
+main section .row {
+    flex-wrap: wrap;
+}
+
+main .row>.col {
+    flex-basis: calc(100% /2);
+}
+
+
+
+
 /*****************************
         CLASS-UTILITIES
 ******************************/

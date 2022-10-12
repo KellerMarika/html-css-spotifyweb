@@ -1,0 +1,45 @@
+
+/*****************************
+        MEDIA MOBILE-FIRST
+******************************/
+
+/*********** SM SMALL ************/
+
+@media screen and (min-width: 568px) {
+    body{
+        color: red;
+    }
+    
+}
+
+/*********** MD MEDIUM ************/
+
+@media screen and (min-width: 768px) {
+    body{
+        color: rgb(42, 6, 248);
+    }
+
+    .col-md_1-4{
+        flex-basis: calc(100% /4);
+    
+    }
+    
+}
+
+/*********** LG LARGE ************/
+@media screen and (min-width: 992px) {
+    body{
+        color: rgb(43, 255, 0);
+    }
+    
+    main section .row{
+        flex-wrap:nowrap;
+    }
+
+    .col-lg_1-6{
+        flex-basis: calc(100% /6);
+    
+    }
+}
+
+

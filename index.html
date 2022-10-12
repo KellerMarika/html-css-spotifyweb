@@ -21,7 +21,7 @@
 
     <!-- css files -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/style-media.css">
     <link rel="stylesheet" href="css/bonus.css">
 
 </head>
@@ -46,12 +46,14 @@
                             <aside>
 
                                 <!-- aside ul i+txt -->
+
+                                <!-- larghezza fissa xs:60px >250px -->
                                 <div class="container">
                                     <div class="row">
 
                                         <!-- logo + menu -->
                                         <div class="col">
-                                            <div class="as-top">
+                                            <div id="as-top">
                                                 <div class="logo">
                                                     <img src="" alt="">
                                                 </div>
@@ -92,10 +94,10 @@
 
                                         <!-- playlist menu -->
                                         <div class="col">
-                                            <div class="as-middle">
+                                            <div id="as-middle">
 
-                                                <div class="title">
-                                                    <h3>playlist</h3>
+                                                <div class="title upper">
+                                                    <h4>playlist</h4>
                                                 </div>
 
                                                 <div class="create-playlist s-i_l">
@@ -146,7 +148,7 @@
                                         </div>
 
                                         <div class="col">
-                                            <div class="as-bottom">
+                                            <div id="as-bottom">
 
                                                 <a href="#">
 
@@ -166,7 +168,7 @@
                                                         <i></i>
                                                     </span>
                                                     <span class="txt">
-                                                        <h3></h3>
+                                                        <h4></h4>
                                                     </span>
                                                 </a>
                                             </div>
@@ -176,26 +178,124 @@
                             </aside>
                         </div>
 
-
+                        <!-- main -->
                         <div class="col">
-                            <main>
 
-                            </main>
+                            <main>
+                                <!-- upgrade-btn+section-nav +row(section*3) -->
+                                <div class="container">
+
+
+                                    <article>
+                                        <!-- upgrade-btn       text-align right ----------->
+                                        <div id="upgrade" class="container">
+                                            <!-- bottone large border fs-m-->
+                                            <button class="btn lg br">
+                                                <h4 class="upper">effettua l'upgrade</h4>
+                                            </button>
+
+                                        </div>
+                                    </article>
+
+
+
+                                    <section>
+                                        <!-- section nav con effetti sotto tasti  no flex-->
+                                        <div id="sections-nav" class="container">
+
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <h4 class="upper"></h4>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <h4 class="upper"></h4>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <h4 class="upper"></h4>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <h4 class="upper"></h4>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <h4 class="upper"></h4>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <h4 class="upper"></h4>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+
+                                    <!-- flex-dir column -->
+                                    <div class="row">
+
+                                        <div class="col ">
+
+                                            <section>
+                                                <div id="recently" class="container">
+                                                    <h2>Recently played</h2>
+
+                                                    <!-- xs,s,m: wrap  lg:no-wrap-->
+
+                                                    <div class="row">
+
+                                                        <!-- xs,s:1/2  m:1/4  lg: 1/6-->
+                                                        <div class="col col-md_1-4 col-lg_1-6">
+
+                                                        </div>
+
+
+
+
+                                                    </div>
+
+                                                </div>
+
+                                            </section>
+
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+
+
+
+
+
                         </div>
 
+                        </main>
                     </div>
+
                 </div>
             </div>
-
-
-
-            <div class="col">
-                <nav>
-
-                </nav>
-            </div>
-
         </div>
+
+
+
+        <div class="col">
+            <nav>
+
+            </nav>
+        </div>
+
+    </div>
     </div>
 
 
