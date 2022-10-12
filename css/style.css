@@ -85,6 +85,11 @@ img{
     padding: 20px
 }
 
+.col-xs_1-2 {
+    flex-basis: calc(100% /2);
+}
+
+
 /* *********size-icon********** */
 
 .s-i_xs:;
@@ -131,10 +136,6 @@ img{
 
 main section .row {
     flex-wrap: wrap;
-}
-
-main section .col {
-    flex-basis: calc(100% /2);
 }
 
 
