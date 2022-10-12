@@ -12,7 +12,7 @@ body {
     font-family: roboto, sans-serif;
 
     /* è una app: altezza = viewport */
-    height: 100vw;
+    height: 100vh;
 }
 
 a,
@@ -26,7 +26,7 @@ li {
     list-style-type: none;
 }
 
-img{
+img {
     width: 100%;
 }
 
@@ -53,16 +53,7 @@ img{
     --txt_primary-color-dark: #7b7e82;
     --txt_primary-color: #a3a3a3;
     --txt_primary-color-light: #ffffff;
-
-
 }
-
-
-/*****************************
-            GENERAL
-******************************/
-
-
 
 
 /*****************************
@@ -75,17 +66,16 @@ img{
     display: flex;
 }
 
-.row-col{
+.row-col {
     flex-direction: column;
+   
 }
 
-.row-row{
-    flex-direction: row;
-}
 
 .row>* {
-    border: 1px solid greenyellow;
-    padding: 20px
+    border: 1px solid rgb(185, 66, 179);
+    padding: 10px;
+
 }
 
 .col-xs_1-2 {
@@ -111,7 +101,7 @@ img{
     text-transform: uppercase;
 }
 
-.cap{
+.cap {
     text-transform: capitalize;
 }
 
@@ -122,31 +112,86 @@ img{
 
 
 
+/************* MOBILE-FIRST ******************/
 
+/*******************************
+        MAX-CONTAINER
+******************************/
+#max-container {
+    height: 100vh;
+}
+/* ______________________________ */
+#max-container>.row-col,
+#aside-main-container .row{
+    height: 100%;
+}
+/* ______________________________ */
 
+#max-container #aside-main-container.col {
+    flex-grow: 1;
+}
 
+#max-container #nav-bar.col {
+    flex-shrink: 0;
+/*     height: 90px; */
+}
 
 /*****************************
             ASIDE
 ******************************/
+/* ______________________________ */
 
 
+aside.container {
+    width: 65px;
+    height: 100%;
+/* ______________________________ */
+}
 
+#as-top.col,
+#as-bottom.col{
+    flex-shrink: 0;
+}
+
+#as-middle.col{
+    flex-grow: 1;
+}
 
 /*****************************
         MAIN SECTIONS
 ******************************/
 
+main{
+    height: 100%;
+    /* scrollbar solo per main (app!) */
+    overflow: auto;
+
+}
 main section .row {
     flex-wrap: wrap;
 }
 
+main .row.row-col>*{
+    flex-grow: 1;
+}
+
+main #upgrade{
+    text-align: right;
+}
 
 
 
 /*****************************
-        CLASS-UTILITIES
+        BOTTOM-NAVBAR
 ******************************/
-/*****************************
-        CLASS-UTILITIES
-******************************/
+
+#nb-middle{
+    flex-grow: 1;
+}
+
+#nb-left,
+#nb-right{
+    flex-shrink: 0;
+}
+
+

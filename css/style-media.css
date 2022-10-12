@@ -1,43 +1,71 @@
 
+/***** MEDIA MOBILE-FIRST  ********************/
+
+/*****************************
+            SM SMALL
 /*****************************
         MEDIA MOBILE-FIRST
 ******************************/
-
-/*********** SM SMALL ************/
-
 @media screen and (min-width: 568px) {
-    body{
+    body {
         color: red;
     }
-    
-}
 
-/*********** MD MEDIUM ************/
+
+
+
+/************ASIDE**************/
+
+    aside.container {
+        width: 230px;
+    }
+
+
+
+}
+/*****************************
+            MD MEDIUM 
+******************************/
 
 @media screen and (min-width: 768px) {
-    body{
+
+/************** BASE****************/
+
+    body {
         color: rgb(42, 6, 248);
     }
 
-    .col-md_1-4{
+/******** CLASS-UTILITIES***********/
+
+    .col-md_1-4 {
         flex-basis: calc(100% / 4);
-    
     }
-    
+
+
+/******** BOTTOM-NAVBAR***********/
+
+    .song-btn .row.row-col {
+        flex-direction: row;
+    }
+
 }
 
-/*********** LG LARGE ************/
+
+/*****************************
+            LG LARGE 
+******************************/
+
 @media screen and (min-width: 992px) {
-    body{
+    body {
         color: rgb(43, 255, 0);
     }
-    
-    main section .row{
-        flex-wrap:nowrap;
+
+    main section .row {
+        flex-wrap: nowrap;
     }
 
-    .col-lg_1-6{
+    .col-lg_1-6 {
         flex-basis: calc(100% /6);
-    
+
     }
 }
