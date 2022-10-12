@@ -71,10 +71,8 @@ img {
    
 }
 
-
 .row>* {
     border: 1px solid rgb(185, 66, 179);
-    padding: 10px;
 
 }
 
@@ -112,7 +110,7 @@ img {
 
 
 
-/************* MOBILE-FIRST ******************/
+/********** MOBILE-FIRST **************/
 
 /*******************************
         MAX-CONTAINER
@@ -120,12 +118,12 @@ img {
 #max-container {
     height: 100vh;
 }
-/* ______________________________ */
+
 #max-container>.row-col,
 #aside-main-container .row{
     height: 100%;
 }
-/* ______________________________ */
+
 
 #max-container #aside-main-container.col {
     flex-grow: 1;
@@ -133,19 +131,17 @@ img {
 
 #max-container #nav-bar.col {
     flex-shrink: 0;
-/*     height: 90px; */
+    height: 90px; 
 }
 
 /*****************************
             ASIDE
 ******************************/
-/* ______________________________ */
-
 
 aside.container {
     width: 65px;
     height: 100%;
-/* ______________________________ */
+
 }
 
 #as-top.col,
@@ -160,7 +156,9 @@ aside.container {
 /*****************************
         MAIN SECTIONS
 ******************************/
-
+#master-main{
+    flex-grow: 1;
+}
 main{
     height: 100%;
     /* scrollbar solo per main (app!) */
@@ -184,6 +182,10 @@ main #upgrade{
 /*****************************
         BOTTOM-NAVBAR
 ******************************/
+#nav-bar nav .row {
+    align-items: center;
+    vertical-align: center;
+}
 
 #nb-middle{
     flex-grow: 1;
