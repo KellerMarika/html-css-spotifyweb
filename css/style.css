@@ -79,6 +79,9 @@ img{
     flex-direction: column;
 }
 
+.row-row{
+    flex-direction: row;
+}
 
 .row>* {
     border: 1px solid greenyellow;

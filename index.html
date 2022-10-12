@@ -34,7 +34,7 @@
 
     <div id="max-container">
         <!-- flex col -->
-        <div class="row">
+        <div class="row row-col">
 
             <div class="col">
                 <!--flex-grow 1 aside+main -->
@@ -454,85 +454,149 @@
                     </div>
                 </div>
             </div>
-        </div>
 
 
-        <!-- nav-footer  shrink-->
-        <div class="col">
-            <nav>
-                <div id="nav-bar" class="container">
-                    <div class="row">
 
-                        <div class="col">
-                            <div class="nb-left">
+            <!-- nav-footer  shrink-->
+            <div class="col">
+                <nav>
+                    <div id="nav-bar" class="container">
+                        <div class="row">
+
+                            <div class="col">
+                                <div id="nb-left">
 
 
-                                <div class="row ">
+                                    <div class="row ">
 
-                                    <div class="col">
+                                        <div class="col">
 
-                                        <div class="song-img">
-                                            <img src="" alt="">
+                                            <div class="song-img">
+                                                <img src="" alt="">
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col">
-                                        <div class="song-info">
-                                            <h5 class="title cap">Sinister</h5>
-                                            <div class="txt subtitle cap">brano nome</div>
+                                        <div class="col">
+                                            <div class="song-info">
+                                                <h5 class="title cap">Sinister</h5>
+                                                <div class="txt subtitle cap">brano nome</div>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col">
-                                        <div class="song-btn">
+                                        <div class="col">
+                                            <div class="song-btn">
 
-                                            <!-- a sm flex-direction row -->
-                                            <div class="row row-col">
-                                                <div class="col">
-                                                    <button class="btn s-i_xs">
-                                                        <i>s</i>
-                                                    </button>
-                                                </div>
-                                                <div class="col">
-                                                    <button class="btn s-i_xs">
-                                                        <i>a</i>
-                                                    </button>
+                                                <!-- a sm flex-direction row -->
+                                                <div class="row row-col">
+                                                    <div class="col">
+                                                        <button class="btn s-i_xs">
+                                                            <i>s</i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button class="btn s-i_xs">
+                                                            <i>a</i>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+
+
+
+                            <div class="col">
+                                <div id="nb-middle">
+
+                                    <div class=" row row-col">
+
+                                        <div class="col">
+                                            <div id="player-btn">
+
+                                                <button class="btn s-i_s">
+                                                    <i>a</i>
+                                                </button>
+
+                                                <button class="btn s-i_s">
+                                                    <i>a</i>
+                                                </button>
+
+                                                <!-- border-radius -------------->
+                                                <button class="btn s-i_s">
+                                                    <i>a</i>
+                                                </button>
+
+                                                <button class="btn s-i_s">
+                                                    <i>a</i>
+                                                </button>
+
+                                                <button class="btn s-i_s">
+                                                    <i>a</i>
+                                                </button>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="col">
+                                            <div id="player-bar">
+
+                                                <!-- barra di avanzamento -->
+                                                <span class="txt f-s_xs"></span>
+                                                <span class="bg-progress-bar">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="txt f-s_xs"></span>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div id="nb-right">
+
+
+                                    <div id="audio-options">
+
+                                        <button class="btn s-i_xs">
+                                            <i>s</i>
+                                        </button>
+
+                                        <button class="btn s-i_xs">
+                                            <i>s</i>
+                                        </button>
+
+                                        <button class="btn s-i_xs">
+                                            <i>s</i>
+                                        </button>
+
+                                        <!-- barra di avanzamento -->
+                                        <span class="bg-progress-bar">
+                                            <span class="progress-bar"></span>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-
-
-                    <div class="col">
-                        <div class="nb-middle">
-
-                            
-
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="nb-right">
-
-                        </div>
-                    </div>
-
-                </div>
+                </nav>
+            </div>
         </div>
-
-        </nav>
     </div>
-
-    </div>
-    </div>
-
-
-
-
-
 </body>
+
+
+<!-- da fixare:
+display-flex: default column , quindi .row è sempre flex dir column.
+cambiare  row-col in row row con display row 
+
+dare flex grow e flex-basis-->
