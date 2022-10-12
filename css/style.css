@@ -26,6 +26,9 @@ li {
     list-style-type: none;
 }
 
+img{
+    width: 100%;
+}
 
 /*****************************
             VARIABILI
@@ -72,11 +75,16 @@ li {
     display: flex;
 }
 
-.row>* {
-    border: 1px solid greenyellow;
+.row-col{
+    flex-direction: column;
 }
 
-col
+
+.row>* {
+    border: 1px solid greenyellow;
+    padding: 20px
+}
+
 /* *********size-icon********** */
 
 .s-i_xs:;
@@ -95,10 +103,13 @@ col
     text-transform: uppercase;
 }
 
+.cap{
+    text-transform: capitalize;
+}
+
 .divider {
     width: 1px solid var(--el_primary-color-dark);
 }
-
 
 
 
@@ -117,11 +128,12 @@ col
 /*****************************
         MAIN SECTIONS
 ******************************/
+
 main section .row {
     flex-wrap: wrap;
 }
 
-main .row>.col {
+main section .col {
     flex-basis: calc(100% /2);
 }
 
