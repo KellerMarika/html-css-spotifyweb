@@ -112,8 +112,11 @@ img {
 .i-c_01 {}
 
 /* *********font-size********** */
-.f-s_s {
+.f-s_xs {
     font-size: .5rem
+}
+.f-s_s {
+    font-size: .8rem
 }
 
 .f-s_m {
@@ -121,7 +124,7 @@ img {
 }
 
 .f-s_l {
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 
@@ -173,6 +176,9 @@ border-radius: 3rem;
 padding: 1.5rem 4rem;
 }
 
+
+
+
 /********** MOBILE-FIRST **************/
 
 /*******************************
@@ -215,11 +221,14 @@ aside.container {
 
 #as-middle.col {
     flex-grow: 1;
+    overflow: auto;
 }
 
 #aside-nav li{
     text-align: center;
-
+}
+#aside-nav li *{
+    vertical-align: middle;
 }
 
 /* elementi.... */
@@ -246,6 +255,7 @@ aside.container {
 ******************************/
 #master-main {
     flex-grow: 1;
+    overflow: auto;
 }
 
 /* ******MAIN ARTICLE UPGRADE*************/
@@ -294,6 +304,10 @@ main .card{text-align: center;}
 /*****************************
         BOTTOM-NAVBAR
 ******************************/
+
+
+/****** struttura base ***********/
+
 nav.container {
     background-color: var(--bg_primary-color-light);
 }
@@ -310,4 +324,37 @@ nav.container {
 #nb-left,
 #nb-right {
     flex-shrink: 0;
+} 
+/******** nav left ****************/
+#nb-left .song-img{
+    width:5vw ;
+}
+
+/****** nav middle ****************/
+
+#player-bar>*,
+#audio-options>*{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bg-progress-bar{
+    background-color: var(--el_primary-color-dark);
+}
+
+.progress-bar{
+    background-color:var(--txt_primary-color-light);
+    width: 20%;
+    height: 100%;
+}
+
+#player-bar .bg-progress-bar{
+    width: 40vw;
+    height: .3rem;
+}
+/*****  nav right  **************/
+
+#audio-options .bg-progress-bar{
+    width: 5rem;
+    height: .3rem;
 }
