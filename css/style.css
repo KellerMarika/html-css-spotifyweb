@@ -11,7 +11,7 @@
 body {
     font-family: roboto, sans-serif;
     color: var(--txt_primary-color);
-    font-size:16px;
+    font-size: 12px;
     /* è una app: altezza = viewport */
     height: 100vh;
 }
@@ -22,6 +22,9 @@ a:hover,
 a:active {
     color: unset;
     text-decoration: none;
+    display: inline-block;
+    /* _____________________________________ */
+    padding: 0.5rem;
 }
 
 li {
@@ -83,29 +86,63 @@ img {
 }
 
 /********** display *************/
-.s-display{
+.s-display {
     display: none;
 }
 
 /* *********size-icon********** */
 
-.s-i_xs:;
-.s-i_s:;
-.s-i_m:;
-.s-i_l:;
+
+.s-i_xs {
+    width: .5rem;
+}
+
+.s-i_s {}
 
 
-/* *********size-icon********** */
-.f-s_xs:;
-.f-s_s:;
-.f-s_m:;
-.f-s_l:;
+.s-i_m {
+    width: 2rem;
+}
 
-.title{
-    color: var(--txt_primary-color-light);
+.s-i_l {}
+
+
+/* *********color-icon********** */
+
+.i-c_01 {}
+
+/* *********font-size********** */
+.f-s_s {
+    font-size: .5rem
+}
+
+.f-s_m {
+    font-size: 1rem;
+}
+
+.f-s_l {
+    font-size: 2rem;
 }
 
 
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+h4,
+.b{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/* *************************** */
+
+.title {
+    color: var(--txt_primary-color-light);
+}
 
 .upper {
     text-transform: uppercase;
@@ -115,12 +152,26 @@ img {
     text-transform: capitalize;
 }
 
+.round {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
 .divider {
     width: 1px solid var(--el_primary-color-dark);
 }
 
+.btn{
+    border: none;
+    color: var(--btn_primary-color);
+    background-color: transparent;
+}
 
-
+.btn.lg{
+border: 1px solid var(--btn_primary-color);
+border-radius: 3rem;
+padding: 1.5rem 4rem;
+}
 
 /********** MOBILE-FIRST **************/
 
@@ -156,6 +207,7 @@ aside.container {
     height: 100%;
 
 }
+
 #as-top.col,
 #as-bottom.col {
     flex-shrink: 0;
@@ -165,17 +217,29 @@ aside.container {
     flex-grow: 1;
 }
 
+#aside-nav li{
+    text-align: center;
+
+}
+
 /* elementi.... */
 
 .logo .xs-display,
-.logo .s-display{
+.logo .s-display {
     height: 3rem;
 }
-
 .logo .s-display{
-    transform: translateX(-1.75rem);
+    transform: translateX(-1.5rem);
+}
+#as-middle .fa-plus {
+    color: var(--bg_secondary-color);
+    background-color: var(--el_primary-color);
+    padding: 10px;
 }
 
+.install-icon{
+    border: 1px solid var(--txt_primary-color);
+}
 
 /*****************************
         MAIN SECTIONS
@@ -186,14 +250,21 @@ aside.container {
 
 /* ******MAIN ARTICLE UPGRADE*************/
 
-#upgrade.container{
+#upgrade.container {
     background-color: var(--bg_primary-color-dark);
 }
 
 
+
 /* ******MAIN SECTION-NAV *************/
 
-
+#sections-nav ul{
+    text-align: center;
+}
+#sections-nav li{
+    display: inline-block;
+    padding: ;
+}
 
 /* ******MAIN *************/
 
@@ -217,13 +288,14 @@ main #upgrade {
     text-align: right;
 }
 
+main .card{text-align: center;}
 
 
 /*****************************
         BOTTOM-NAVBAR
 ******************************/
-nav.container{
-    background-color:var(--bg_primary-color-light);
+nav.container {
+    background-color: var(--bg_primary-color-light);
 }
 
 #nav-bar nav .row {
@@ -239,6 +311,3 @@ nav.container{
 #nb-right {
     flex-shrink: 0;
 }
-
-
-

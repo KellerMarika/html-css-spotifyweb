@@ -1,4 +1,3 @@
-
 /***** MEDIA MOBILE-FIRST  ********************/
 
 /*****************************
@@ -12,42 +11,50 @@
     }
 
 
+ /********CLASS-UTILITIES**************/
+
+    .xs-display {
+        display: none;
+    }
+
+    .s-display {
+        display: inline-block;
+    }
 
 
-/************ASIDE**************/
+    /************ASIDE**************/
 
     aside.container {
         width: 230px;
     }
 
-    .xs-display{
-       display: none;
-       }
-.s-display{
-    display: block;
+    #aside-nav li{
+        text-align: left;
+    
+    }
 }
 
-}
 /*****************************
             MD MEDIUM 
 ******************************/
 
 @media screen and (min-width: 768px) {
 
-/************** BASE****************/
+    /************** BASE****************/
 
     body {
+        font-size: 14px;
         color: rgb(42, 6, 248);
     }
 
-/******** CLASS-UTILITIES***********/
+    /******** CLASS-UTILITIES***********/
 
     .col-md_1-4 {
         flex-basis: calc(100% / 4);
     }
 
 
-/******** BOTTOM-NAVBAR***********/
+    /******** BOTTOM-NAVBAR***********/
 
     .song-btn .row.row-col {
         flex-direction: row;
@@ -62,6 +69,7 @@
 
 @media screen and (min-width: 992px) {
     body {
+        font-size: 16px;
         color: rgb(43, 255, 0);
     }
 

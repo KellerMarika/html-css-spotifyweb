@@ -49,37 +49,37 @@
                                 <!-- logo + menu -->
                                 <div id="as-top" class="col">
                                     <div class="container">
+
                                         <div class="logo">
+                                            <!-- mobile :xs  >:s  -->
                                             <img class="xs-display" src="img/logo-small.svg" alt="spotify-logo">
                                             <img class="s-display" src="img/logo.svg" alt="spotify-logo">
                                         </div>
-                                        
+
                                         <div class="menu-list">
-                                            <ul>
+                                            <ul class="">
+                                                <li>
+                                                    <a href="#">
+                                                        <!-- mid -->
+
+                                                        <img class="s-i_m" src="img/home.svg" alt="home">
+                                                        <span class="txt s-display">home</span>
+                                                    </a>
+                                                </li>
+
                                                 <li>
                                                     <a href="#">
 
-                                                        <!-- mid -->
-                                                        <span class="s-i_m">
-                                                            <i></i>
-                                                        </span>
-                                                        <span class="txt"></span>
+                                                        <img class="s-i_m" src="img/search.svg" alt="magnify">
+                                                        <span class="txt s-display ">cerca</span>
                                                     </a>
                                                 </li>
+
                                                 <li>
                                                     <a href="#">
-                                                        <span class="s-i_m">
-                                                            <i></i>
-                                                        </span>
-                                                        <span class="txt"></span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span class="s-i_m">
-                                                            <i></i>
-                                                        </span>
-                                                        <span class="txt"></span>
+
+                                                        <img class="s-i_m" src="img/libreria.svg" alt="libreria">
+                                                        <span class="txt s-display ">la tua libreria</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -91,52 +91,52 @@
 
                                 <!-- playlist menu -->
                                 <div id="as-middle" class="col">
-                                    <div class="container">
+                                    <div class="container s-display">
 
                                         <div class="title upper">
                                             <h4>playlist</h4>
                                         </div>
 
-                                        <div clpopular-playlist s-i_l">
-                                            <i></i>
-                                            <span class="txt"></span>
+                                        <div class="playlist s-i_l">
+                                            <i class="fa-sharp fa-solid fa-plus"></i>
+                                            <span class="txt cap">crea playlist</span>
                                         </div>
 
                                         <div class="playlist">
                                             <ul>
                                                 <li>
                                                     <a href="#">
-                                                        <span class="txt"></span>
+                                                        <span class="txt cap">nome playlist</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#">
-                                                        <span class="txt"></span>
+                                                        <span class="txt cap">nome playlist</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#">
-                                                        <span class="txt"></span>
+                                                        <span class="txt cap">nome playlist</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#">
-                                                        <span class="txt"></span>
+                                                        <span class="txt cap">nome playlist</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#">
-                                                        <span class="txt"></span>
+                                                        <span class="txt cap">nome playlist</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#">
-                                                        <span class="txt"></span>
+                                                        <span class="txt cap">nome playlist</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#">
-                                                        <span class="txt"></span>
+                                                        <span class="txt cap"> nome playlist</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -146,35 +146,42 @@
 
                                 <div id="as-bottom" class="col">
                                     <div class="container">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <!-- small install  -->
+                                                    <span class="install-icon f-s_xs round">
+                                                        <i class="fa-sharp fa-solid fa-arrow-down"></i>
+                                                    </span>
 
-                                        <a href="#">
+                                                    <span class="txt cap s-display">installa app</span>
+                                                </a>
+                                            </li>
 
-                                            <!-- small -->
-                                            <span class="s-i_xs">
-                                                <i></i>
-                                            </span>
-                                            <span class="txt"></span>
-                                        </a>
 
-                                        <div class="divider"></div>
+                                            <li>
+                                                <div class="divider"></div>
+                                            </li>
 
-                                        <a href="#">
-
-                                            <!-- mid-->
-                                            <span class="s-i_m">
-                                                <i></i>
-                                            </span>
-                                            <span class="txt">
-                                                <h4></h4>
-                                            </span>
-                                        </a>
+                                            <li>
+                                                <a href="#">
+                                                    <!-- mid profile-->
+                                                    <span class="profile-img ">
+                                                        <img class="s-i_m" src="img/profile.svg" alt="profile-img">
+                                                    </span>
+        
+                                                    <span class=" txt title cap b s-display">john doe
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>                                        
                                     </div>
                                 </div>
                             </div>
                         </aside>
                     </div>
 
-                    <!-- main  overflow auto--------------------------------------->
+                    <!-- MAIN  overflow auto--------------------------------------->
                     <div id="master-main" class="col">
                         <main class="container">
                             <!-- upgrade-btn+section-nav +row(section*3) -->
@@ -183,7 +190,7 @@
                                 <!-- upgrade-btn       text-align right ----------->
                                 <div id="upgrade" class="container">
                                     <!-- bottone large border fs-m-->
-                                    <button class="btn lg br">
+                                    <button class="btn lg">
                                         <h4 class="upper">effettua l'upgrade</h4>
                                     </button>
 
@@ -199,32 +206,33 @@
                                     <ul>
                                         <li>
                                             <a href="#">
-                                                <h4 class="upper"></h4>
+                                                <h4 class="upper">in evidenza</h4>
+<!-- ________________________________ --> <div class="MAGIC"></div><!-- ________________________________ -->
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <h4 class="upper"></h4>
+                                                <h4 class="upper">podcast</h4>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <h4 class="upper"></h4>
+                                                <h4 class="upper">classifiche</h4>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <h4 class="upper"></h4>
+                                                <h4 class="upper">generi e mod</h4>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <h4 class="upper"></h4>
+                                                <h4 class="upper">nuove uscite</h4>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <h4 class="upper"></h4>
+                                                <h4 class="upper">scopri</h4>
                                             </a>
                                         </li>
                                     </ul>
@@ -238,7 +246,7 @@
 
                                     <section>
                                         <div id="recently" class="container">
-                                            <h2>Recently played</h2>
+                                            <h2 class="title">Recently played</h2>
 
 
                                             <div class="card-container">
@@ -251,12 +259,12 @@
                                                         <div class="card">
 
                                                             <div class="card-img">
-                                                                <img src="" alt="">
+                                                                <img src="img/metal_lifting.jpg" alt="metal">
                                                             </div>
 
                                                             <div class="card-info">
                                                                 <h3 class="title cap"> havery metal</h3>
-                                                                <h4 class="subtitle upper">subtitle</h4>
+                                                                <h4 class="subtitle cap">subtitle</h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -266,12 +274,12 @@
                                                         <div class="card">
 
                                                             <div class="card-img">
-                                                                <img src="" alt="">
+                                                                <img src="img/stranger.jpeg" alt="stranger">
                                                             </div>
 
                                                             <div class="card-info">
-                                                                <h3 class="title cap"> havery metal</h3>
-                                                                <h4 class="subtitle upper">subtitle</h4>
+                                                                <h3 class="title cap"> stranger things, vol.1(a netfix original series soundtrack)</h3>
+                                                                <h4 class="subtitle cap">kyle e dixion & michael stein</h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -281,12 +289,12 @@
                                                         <div class="card">
 
                                                             <div class="card-img">
-                                                                <img src="" alt="">
+                                                                <img src="img/aquietplace.jpeg" alt="a quiet-place">
                                                             </div>
 
                                                             <div class="card-info">
-                                                                <h3 class="title cap"> havery metal</h3>
-                                                                <h4 class="subtitle upper">subtitle</h4>
+                                                                <h3 class="title cap">a quiet place</h3>
+                                                                <h4 class="subtitle cap">subtitle</h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -296,12 +304,12 @@
                                                         <div class="card">
 
                                                             <div class="card-img">
-                                                                <img src="" alt="">
+                                                                <img src="img/split.jpeg" alt="split">
                                                             </div>
 
                                                             <div class="card-info">
-                                                                <h3 class="title cap"> havery metal</h3>
-                                                                <h4 class="subtitle upper">subtitle</h4>
+                                                                <h3 class="title cap">split</h3>
+                                                                <h4 class="subtitle cap">subtitle</h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -311,12 +319,12 @@
                                                         <div class="card">
 
                                                             <div class="card-img">
-                                                                <img src="" alt="">
+                                                                <img src="img/cure.jpeg" alt="a cure for wellness">
                                                             </div>
 
                                                             <div class="card-info">
-                                                                <h3 class="title cap"> havery metal</h3>
-                                                                <h4 class="subtitle upper">subtitle</h4>
+                                                                <h3 class="title cap"> a cure for wellness</h3>
+                                                                <h4 class="subtitle cap">subtitle</h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -326,12 +334,12 @@
                                                         <div class="card">
 
                                                             <div class="card-img">
-                                                                <img src="" alt="">
+                                                                <img src="img/sinister.jpeg" alt="sinister">
                                                             </div>
 
                                                             <div class="card-info">
-                                                                <h3 class="title cap"> havery metal</h3>
-                                                                <h4 class="subtitle upper">subtitle</h4>
+                                                                <h3 class="title cap"> sinister</h3>
+                                                                <h4 class="subtitle cap">subtitle</h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -345,7 +353,8 @@
 
                                     <section>
                                         <div id="create" class="container">
-                                            <h2>Creato per John Doe</h2>
+                                            <h2 class="title">Creato per John Doe</h2>
+                                            <div class="subtitle">Più ascolti, più accurati saranno i suggerimenti</div>
 
 
                                             <div class="card-container">
@@ -358,14 +367,13 @@
                                                         <div class="card">
 
                                                             <div class="card-img">
-                                                                <img src="" alt="">
+                                                                <img src="img/radar.jpeg" alt="radar">
                                                             </div>
 
                                                             <div class="card-info">
-                                                                <h3 class="title cap"> havery
+                                                                <h3 class="title cap"> release radar
                                                                     metal</h3>
-                                                                <h4 class="subtitle upper">
-                                                                    subtitle</h4>
+                                                             
                                                             </div>
                                                         </div>
                                                     </div>
@@ -375,14 +383,12 @@
                                                         <div class="card">
 
                                                             <div class="card-img">
-                                                                <img src="" alt="">
+                                                                <img src="img/mixdaily.jpeg" alt="daily mix">
                                                             </div>
 
                                                             <div class="card-info">
-                                                                <h3 class="title cap"> havery
-                                                                    metal</h3>
-                                                                <h4 class="subtitle upper">
-                                                                    subtitle</h4>
+                                                                <h3 class="title cap">daily mix</h3>
+                                                             
                                                             </div>
                                                         </div>
                                                     </div>
@@ -397,7 +403,8 @@
 
                                     <section>
                                         <div id="popular" class="container">
-                                            <h2>artisti più popolari</h2>
+                                            <h2 class="title">artisti più popolari</h2>
+                                            <div class="subtitle">Più ascolti, più accurati saranno i suggerimenti</div>
 
 
                                             <div class="card-container">
@@ -410,14 +417,12 @@
                                                         <div class="card">
 
                                                             <div class="card-img">
-                                                                <img src="" alt="">
+                                                                <img class="round" src="img/youg.jpeg" alt="youg">
                                                             </div>
 
                                                             <div class="card-info">
-                                                                <h3 class="title cap"> havery
-                                                                    metal</h3>
-                                                                <h4 class="subtitle upper">
-                                                                    subtitle</h4>
+                                                                <h3 class="title cap"> youg</h3>
+                                                             
                                                             </div>
                                                         </div>
                                                     </div>
@@ -427,14 +432,12 @@
                                                         <div class="card">
 
                                                             <div class="card-img">
-                                                                <img src="" alt="">
+                                                                <img class="round" src="img/einaudi.jpeg" alt="einoudi">
                                                             </div>
 
                                                             <div class="card-info">
-                                                                <h3 class="title cap"> havery
-                                                                    metal</h3>
-                                                                <h4 class="subtitle upper">
-                                                                    subtitle</h4>
+                                                                <h3 class="title cap"> einaudi</h3>
+                                                           
                                                             </div>
                                                         </div>
                                                     </div>
