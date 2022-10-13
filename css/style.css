@@ -23,16 +23,31 @@ a:active {
     color: unset;
     text-decoration: none;
     display: inline-block;
-    /* _____________________________________ */
     padding: 0.5rem;
 }
 
 li {
     list-style-type: none;
+    padding: 0.25rem;
 }
 
 img {
     width: 100%;
+}
+
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4,
+.b {
+    font-size: 1em;
+    font-weight: bold;
 }
 
 /*****************************
@@ -76,11 +91,6 @@ img {
 
 }
 
-.row>* {
-    border: 1px solid rgb(185, 66, 179);
-
-}
-
 .col-xs_1-2 {
     flex-basis: calc(100% /2);
 }
@@ -90,31 +100,25 @@ img {
     display: none;
 }
 
-/* *********size-icon********** */
+.overflow{
+    overflow: auto;
+}
 
+/* *********size-img********** */
 
 .s-i_xs {
     width: .5rem;
 }
 
-.s-i_s {}
-
-
 .s-i_m {
     width: 2rem;
 }
 
-.s-i_l {}
-
-
-/* *********color-icon********** */
-
-.i-c_01 {}
-
-/* *********font-size********** */
+/****** font-size *******/
 .f-s_xs {
     font-size: .5rem
 }
+
 .f-s_s {
     font-size: .8rem
 }
@@ -128,20 +132,71 @@ img {
 }
 
 
-h2{
-    font-size: 2rem;
+/******padding******************/
+
+/* bottom...... */
+.pd-b_01 {
+    padding-bottom: 1rem;
 }
-h3{
-    font-size: 1.4rem;
+.pd-b_02 {
+    padding-bottom: 1.5rem;
 }
-h4,
-.b{
-    font-size: 1rem;
-    font-weight: bold;
+.pd-b_03 {
+    padding-bottom: 2rem;
+}
+.pd-b_04 {
+    padding-bottom: 5rem;
+}
+/* top...... */
+.pd-t_01 {
+    padding-top: 1rem;
+}
+.pd-t_02 {
+    padding-top: 1.5rem;
+}
+.pd-t_03 {
+    padding-top: 2rem;
+}
+.pd-t_04 {
+    padding-top: 5rem;
+}
+/* padding 0 top-bottom...... */
+.pd-tb_01 {
+    padding:1rem 0;
+}
+.pd-tb_02 {
+    padding:1.5rem 0;
+}
+.pd-tb_03 {
+    padding:2rem 0;
+}
+.pd-tb_04 {
+    padding:5rem 0;
 }
 
+/* padding 0 x...... */
+
+
+.pd_00 {
+    padding:1rem;
+}
+.pd_01 {
+    padding:1rem;
+}
+.pd_02 {
+    padding:1.5rem;
+}
+.pd_03 {
+    padding:2rem;
+}
+.pd_04 {
+    padding:5rem;
+}
 
 /* *************************** */
+.txt{ 
+    padding-left: .3rem;
+}
 
 .title {
     color: var(--txt_primary-color-light);
@@ -161,19 +216,23 @@ h4,
 }
 
 .divider {
-    width: 1px solid var(--el_primary-color-dark);
+    background-color: var(--el_primary-color-dark);
+    height: 1px;
+    width: 95%;
+
 }
 
-.btn{
+.btn {
     border: none;
     color: var(--btn_primary-color);
     background-color: transparent;
+    padding: .5rem;
 }
 
-.btn.lg{
-border: 1px solid var(--btn_primary-color);
-border-radius: 3rem;
-padding: 1.5rem 4rem;
+.btn.lg {
+    border: 1px solid var(--btn_primary-color);
+    border-radius: 3rem;
+    padding: 1.5rem 4rem;
 }
 
 
@@ -196,6 +255,8 @@ padding: 1.5rem 4rem;
 
 #max-container #aside-main-container.col {
     flex-grow: 1;
+       /* tutti i genitori con flex-grow1 di "main" che ha overflow auto, devono avere anch'essi overflow auto */
+    overflow: auto;
 }
 
 #max-container #nav-bar.col {
@@ -224,29 +285,32 @@ aside.container {
     overflow: auto;
 }
 
-#aside-nav li{
+#aside-nav li {
     text-align: center;
 }
-#aside-nav li *{
+
+#aside-nav li * {
     vertical-align: middle;
 }
 
-/* elementi.... */
+/* elrementi.... */
 
 .logo .xs-display,
 .logo .s-display {
     height: 3rem;
 }
-.logo .s-display{
+
+.logo .s-display {
     transform: translateX(-1.5rem);
 }
+
 #as-middle .fa-plus {
     color: var(--bg_secondary-color);
     background-color: var(--el_primary-color);
     padding: 10px;
 }
 
-.install-icon{
+.install-icon {
     border: 1px solid var(--txt_primary-color);
 }
 
@@ -255,6 +319,7 @@ aside.container {
 ******************************/
 #master-main {
     flex-grow: 1;
+    /* tutti i genitori con flex-grow1 di overflow auto (main) devono avere anch'essi overflow auto */
     overflow: auto;
 }
 
@@ -264,16 +329,20 @@ aside.container {
     background-color: var(--bg_primary-color-dark);
 }
 
+#upgrade .btn.lg{
+    margin-bottom: 1rem;
+}
+
 
 
 /* ******MAIN SECTION-NAV *************/
 
-#sections-nav ul{
+#sections-nav ul {
     text-align: center;
 }
-#sections-nav li{
+
+#sections-nav li {
     display: inline-block;
-    padding: ;
 }
 
 /* ******MAIN *************/
@@ -298,7 +367,9 @@ main #upgrade {
     text-align: right;
 }
 
-main .card{text-align: center;}
+main .card {
+    text-align: center;
+}
 
 
 /*****************************
@@ -309,7 +380,8 @@ main .card{text-align: center;}
 /****** struttura base ***********/
 
 nav.container {
-    background-color: var(--bg_primary-color-light);
+    background-color: var(--bg_primary-color-light); 
+    padding: 0 1rem;
 }
 
 #nav-bar nav .row {
@@ -324,37 +396,42 @@ nav.container {
 #nb-left,
 #nb-right {
     flex-shrink: 0;
-} 
-/******** nav left ****************/
-#nb-left .song-img{
-    width:5vw ;
 }
+
+/******** nav left ****************/
+#nb-left .song-img {
+    width: 4vw;
+    padding-right: 0.8rem;
+}
+
 
 /****** nav middle ****************/
 
 #player-bar>*,
-#audio-options>*{
+#audio-options>* {
     display: inline-block;
     vertical-align: middle;
 }
 
-.bg-progress-bar{
+
+.bg-progress-bar {
     background-color: var(--el_primary-color-dark);
 }
 
-.progress-bar{
-    background-color:var(--txt_primary-color-light);
+.progress-bar {
+    background-color: var(--txt_primary-color-light);
     width: 20%;
     height: 100%;
 }
 
-#player-bar .bg-progress-bar{
+#player-bar .bg-progress-bar {
     width: 40vw;
-    height: .3rem;
+    height: .2rem;
 }
+
 /*****  nav right  **************/
 
-#audio-options .bg-progress-bar{
+#audio-options .bg-progress-bar {
     width: 5rem;
-    height: .3rem;
+    height: .2rem;
 }

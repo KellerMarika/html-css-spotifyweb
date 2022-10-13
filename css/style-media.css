@@ -6,12 +6,12 @@
         MEDIA MOBILE-FIRST
 ******************************/
 @media screen and (min-width: 568px) {
-    body {
-        color: red;
-    }
 
 
- /********CLASS-UTILITIES**************/
+
+
+
+    /********CLASS-UTILITIES**************/
 
     .xs-display {
         display: none;
@@ -28,9 +28,9 @@
         width: 230px;
     }
 
-    #aside-nav li{
+    #aside-nav li {
         text-align: left;
-    
+
     }
 }
 
@@ -41,11 +41,13 @@
 @media screen and (min-width: 768px) {
 
     /************** BASE****************/
-
     body {
         font-size: 14px;
-        color: rgb(42, 6, 248);
     }
+
+
+
+
 
     /******** CLASS-UTILITIES***********/
 
@@ -68,10 +70,14 @@
 ******************************/
 
 @media screen and (min-width: 992px) {
+
+
     body {
         font-size: 16px;
-        color: rgb(43, 255, 0);
     }
+
+    
+
 
     main section .row {
         flex-wrap: nowrap;
