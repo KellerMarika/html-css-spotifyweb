@@ -73,8 +73,10 @@ h4,
     --txt_primary-color-dark: #7b7e82; */
     --txt_primary-color: #a3a3a3;
     --txt_primary-color-light: #ffffff;
-}
 
+    /****** gap e column *************/
+
+}
 
 /*****************************
         CLASS-UTILITIES
@@ -91,16 +93,12 @@ h4,
 
 }
 
-.col-xs_1-2 {
-    flex-basis: calc(100% /2);
-}
-
 /********** display *************/
 .s-display {
     display: none;
 }
 
-.overflow{
+.overflow {
     overflow: auto;
 }
 
@@ -138,63 +136,78 @@ h4,
 .pd-b_01 {
     padding-bottom: 1rem;
 }
+
 .pd-b_02 {
     padding-bottom: 1.5rem;
 }
+
 .pd-b_03 {
     padding-bottom: 2rem;
 }
+
 .pd-b_04 {
     padding-bottom: 5rem;
 }
+
 /* top...... */
 .pd-t_01 {
     padding-top: 1rem;
 }
+
 .pd-t_02 {
     padding-top: 1.5rem;
 }
+
 .pd-t_03 {
     padding-top: 2rem;
 }
+
 .pd-t_04 {
     padding-top: 5rem;
 }
+
 /* padding 0 top-bottom...... */
 .pd-tb_01 {
-    padding:1rem 0;
+    padding: 1rem 0;
 }
+
 .pd-tb_02 {
-    padding:1.5rem 0;
+    padding: 1.5rem 0;
 }
+
 .pd-tb_03 {
-    padding:2rem 0;
+    padding: 2rem 0;
 }
+
 .pd-tb_04 {
-    padding:5rem 0;
+    padding: 5rem 0;
 }
 
 /* padding 0 x...... */
 
 
 .pd_00 {
-    padding:1rem;
+    padding: 1rem;
 }
+
 .pd_01 {
-    padding:1rem;
+    padding: 1rem;
 }
+
 .pd_02 {
-    padding:1.5rem;
+    padding: 1.5rem;
 }
+
 .pd_03 {
-    padding:2rem;
+    padding: 2rem;
 }
+
 .pd_04 {
-    padding:5rem;
+    padding: 5rem;
 }
 
 /* *************************** */
-.txt{ 
+.txt {
     padding-left: .3rem;
 }
 
@@ -255,7 +268,7 @@ h4,
 
 #max-container #aside-main-container.col {
     flex-grow: 1;
-       /* tutti i genitori con flex-grow1 di "main" che ha overflow auto, devono avere anch'essi overflow auto */
+    /* tutti i genitori con flex-grow1 di "main" che ha overflow auto, devono avere anch'essi overflow auto */
     overflow: auto;
 }
 
@@ -329,7 +342,7 @@ aside.container {
     background-color: var(--bg_primary-color-dark);
 }
 
-#upgrade .btn.lg{
+#upgrade .btn.lg {
     margin-bottom: 1rem;
 }
 
@@ -370,6 +383,25 @@ main #upgrade {
 main .card {
     text-align: center;
 }
+/*.... calc column width .....!!!!!!!!!*/
+
+/* è possibile creare delle variabili all'interno dei selettori ed esportarle poi all'occorrenza nelle diverse media-queries. 
+
+in questo caso creiamo una variabile per il gap che andiamo poi ad inserire in un calc che diventa esso stesso una variabile.
+
+questo ci permette di modificare agilmente  lo spazio tra le column */
+
+main .card-container .row {
+    --gap: 1em;
+    gap: var(--gap);
+    --prop-col_1-2_xs: calc((100% - var(--gap)) / 2);
+}
+
+/* applicazione del calc creato in .row all'interno della .col figlia */
+
+.col-xs_1-2 {
+    flex-basis: var(--prop-col_1-2_xs);
+}
 
 
 /*****************************
@@ -380,7 +412,7 @@ main .card {
 /****** struttura base ***********/
 
 nav.container {
-    background-color: var(--bg_primary-color-light); 
+    background-color: var(--bg_primary-color-light);
     padding: 0 1rem;
 }
 
