@@ -20,7 +20,12 @@
         width: 230px;
     }
 
-
+    .xs-display{
+       display: none;
+       }
+.s-display{
+    display: block;
+}
 
 }
 /*****************************

@@ -10,10 +10,12 @@
 
 body {
     font-family: roboto, sans-serif;
-
+    color: var(--txt_primary-color);
+    font-size:16px;
     /* è una app: altezza = viewport */
     height: 100vh;
 }
+
 
 a,
 a:hover,
@@ -49,8 +51,8 @@ img {
     --el_primary-color-dark: #5a5a5a;
 
     --el_thirdary-color: #adff2f;
-
-    --txt_primary-color-dark: #7b7e82;
+    /* 
+    --txt_primary-color-dark: #7b7e82; */
     --txt_primary-color: #a3a3a3;
     --txt_primary-color-light: #ffffff;
 }
@@ -68,7 +70,7 @@ img {
 
 .row-col {
     flex-direction: column;
-   
+
 }
 
 .row>* {
@@ -80,6 +82,10 @@ img {
     flex-basis: calc(100% /2);
 }
 
+/********** display *************/
+.s-display{
+    display: none;
+}
 
 /* *********size-icon********** */
 
@@ -94,6 +100,12 @@ img {
 .f-s_s:;
 .f-s_m:;
 .f-s_l:;
+
+.title{
+    color: var(--txt_primary-color-light);
+}
+
+
 
 .upper {
     text-transform: uppercase;
@@ -120,7 +132,7 @@ img {
 }
 
 #max-container>.row-col,
-#aside-main-container .row{
+#aside-main-container .row {
     height: 100%;
 }
 
@@ -131,49 +143,77 @@ img {
 
 #max-container #nav-bar.col {
     flex-shrink: 0;
-    height: 90px; 
 }
 
 /*****************************
             ASIDE
 ******************************/
 
+/* struttura... */
 aside.container {
+    background-color: var(--bg_secondary-color);
     width: 65px;
     height: 100%;
 
 }
-
 #as-top.col,
-#as-bottom.col{
+#as-bottom.col {
     flex-shrink: 0;
 }
 
-#as-middle.col{
+#as-middle.col {
     flex-grow: 1;
 }
+
+/* elementi.... */
+
+.logo .xs-display,
+.logo .s-display{
+    height: 3rem;
+}
+
+.logo .s-display{
+    transform: translateX(-1.75rem);
+}
+
 
 /*****************************
         MAIN SECTIONS
 ******************************/
-#master-main{
+#master-main {
     flex-grow: 1;
 }
-main{
+
+/* ******MAIN ARTICLE UPGRADE*************/
+
+#upgrade.container{
+    background-color: var(--bg_primary-color-dark);
+}
+
+
+/* ******MAIN SECTION-NAV *************/
+
+
+
+/* ******MAIN *************/
+
+main {
+    background-color: var(--bg_primary-color);
     height: 100%;
     /* scrollbar solo per main (app!) */
     overflow: auto;
 
 }
+
 main section .row {
     flex-wrap: wrap;
 }
 
-main .row.row-col>*{
+main .row.row-col>* {
     flex-grow: 1;
 }
 
-main #upgrade{
+main #upgrade {
     text-align: right;
 }
 
@@ -182,18 +222,23 @@ main #upgrade{
 /*****************************
         BOTTOM-NAVBAR
 ******************************/
+nav.container{
+    background-color:var(--bg_primary-color-light);
+}
+
 #nav-bar nav .row {
     align-items: center;
     vertical-align: center;
 }
 
-#nb-middle{
+#nb-middle {
     flex-grow: 1;
 }
 
 #nb-left,
-#nb-right{
+#nb-right {
     flex-shrink: 0;
 }
+
 
 
