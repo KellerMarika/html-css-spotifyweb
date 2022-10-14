@@ -370,7 +370,6 @@ svg {
 .profile-img.round svg {
     background-color: var(--el_primary-color-dark);
 }
-
 /*****************************
         MAIN SECTIONS
 ******************************/
@@ -414,6 +413,25 @@ svg {
 #sections-nav li {
     display: inline-block;
 }
+
+.nav-line{
+    display: inline-block;
+    margin-top: .5rem;
+    width: 20%;
+    height: 2px;
+    background-color: var(--el_thirdary-color);
+    text-align: center;
+    transition: transform .4s, opaciry .1s;
+    opacity: 0;
+
+}
+#sections-nav a:hover>.nav-line{
+    transform: scaleX(5);
+    opacity: 1;
+
+}
+
+
 
 
 

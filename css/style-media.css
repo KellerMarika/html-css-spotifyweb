@@ -67,21 +67,16 @@
     }
 
 
-
-
     /******** BOTTOM-NAVBAR***********/
 
     .song-btn .row.row-col {
         flex-direction: row;
     }
-    #nb-right .btn{
+
+    #nb-right .btn {
         padding: 0.5vw;
-        }
-        
-
-
+    }
 }
-
 
 /*****************************
             LG LARGE 
@@ -115,10 +110,14 @@
     #nb-right {
         width: 15vw;
     }
-    #nb-right .btn{
+
+    #nb-right .btn {
         padding: .8vw;
-        }
-        
+    }
+
+
+    /* __________________________________________ */
+    /* potevo usare il vw come logica base di tutti i bottoni. prossima volta_________________________________ */
 
 
 }
