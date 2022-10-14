@@ -28,6 +28,11 @@
 
     }
 }
+/***** ARTICLE UPGRADE BAR *************/
+
+/* #upgrade.container {
+    left: 230px;
+} */
 
 /*****************************
             MD MEDIUM 
@@ -36,7 +41,7 @@
 @media screen and (min-width: 768px) {
 
     /************** BASE****************/
-    body {
+    html {
         font-size: 14px;
     }
 
@@ -44,7 +49,7 @@
 
 
     main .card-container .row {
-        --gap: .8em;
+        --gap: 1rem;
         gap: var(--gap);
         --prop-col_1-4_md: calc((100% - (var(--gap) * 3)) / 4);
     }
@@ -69,7 +74,7 @@
 @media screen and (min-width: 992px) {
 
     /************** BASE****************/
-    body {
+    html {
         font-size: 16px;
     }
 
@@ -79,7 +84,7 @@
 
         flex-wrap: nowrap;
 
-        --gap: .5em;
+        --gap: 1.5rem;
         gap: var(--gap);
         --prop-col_1-6_lg: calc((100% - (var(--gap) * 5)) / 6);
     }

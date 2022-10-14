@@ -8,7 +8,7 @@
     padding: 0;
 }
 
-body {
+html {
     font-family: roboto, sans-serif;
     color: var(--txt_primary-color);
     font-size: 12px;
@@ -45,16 +45,16 @@ img {
 
 
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.4em;
+    font-size: 1.4rem;
 }
 
 h4,
 .b {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -307,6 +307,11 @@ aside.container {
     height: 100%;
 }
 
+#aside-main-container .row {
+    overflow: auto;
+
+}
+
 #as-top.col,
 #as-bottom.col {
     flex-shrink: 0;
@@ -384,6 +389,13 @@ svg {
 
 #upgrade.container {
     background-color: var(--bg_primary-color-dark);
+
+    /* 
+    position: fixed; 
+    top: 0;
+    left: 65px;
+    right:0;
+    z-index: 3; */
 }
 
 #upgrade .btn.lg {
@@ -441,7 +453,7 @@ in questo caso creiamo una variabile per il gap che andiamo poi ad inserire in u
 questo ci permette di modificare agilmente  lo spazio tra le column */
 
 main .card-container .row {
-    --gap: 1em;
+    --gap: .5rem;
     gap: var(--gap);
     --prop-col_1-2_xs: calc((100% - var(--gap)) / 2);
 }
@@ -454,6 +466,7 @@ main .card-container .row {
 
 .card-img {
     position: relative;
+    overflow: hidden;
 }
 
 .card-img .img-overlay {
@@ -500,6 +513,7 @@ nav.container {
 
 #nb-middle {
     flex-grow: 1;
+    overflow: auto;
 }
 
 #nb-left,
@@ -526,8 +540,12 @@ nav.container {
     vertical-align: middle;
 }
 
+/* .progress-container{
+    width: 60vw;
+} */
 
 .bg-progress-bar {
+    flex-grow: 1;
     background-color: var(--el_primary-color-dark);
     border-radius: 20px;
 }
@@ -548,15 +566,16 @@ nav.container {
 
     position: absolute;
     right: 0;
-    background-color: var(--txt_primary-color-light); 
+    background-color: var(--txt_primary-color-light);
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     display: none;
 }
-.progress-bar:hover .progress-scroll{
+
+.progress-bar:hover .progress-scroll {
     display: block;
-} 
+}
 
 
 
@@ -565,15 +584,17 @@ nav.container {
 
 }
 
+#player-bar {
+    width: 100%;
+    text-align: center;
+}
+
 #player-bar .bg-progress-bar {
-    width: 40vw;
+    width: 50%;
     height: .4rem;
 }
 
-
-
-
-#player-btn .btn:hover {
+#player-btn .fa-circle-play:hover {
     transform: scale(115%);
 }
 
