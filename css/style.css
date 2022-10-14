@@ -543,15 +543,20 @@ nav.container {
 
 
 .progress-scroll {
+    height: 300%;
+    aspect-ratio: 1/1;
 
     position: absolute;
-
     right: 0;
-    width: 1.5em;
-    background-color: rgb(202, 8, 137);
-    transform: translateX(1em);
+    background-color: var(--txt_primary-color-light); 
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
 }
-
+.progress-bar:hover .progress-scroll{
+    display: block;
+} 
 
 
 
