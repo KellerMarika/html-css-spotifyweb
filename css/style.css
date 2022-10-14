@@ -392,7 +392,7 @@ svg {
 }
 
 #upgrade .btn.lg {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 #upgrade .btn.lg:hover {
@@ -403,7 +403,6 @@ svg {
         MAIN SECTION-NAV 
 ********************************* */
 #sections-nav {
-
     /* compensa il fixed di upgrade */
     padding-top: 7rem;
 }
@@ -493,7 +492,6 @@ main .card-img:hover>.img-overlay {
 }
 
 
-
 /*****************************
         BOTTOM-NAVBAR
 ******************************/
@@ -517,7 +515,7 @@ nav.container {
 }
 
 #nb-left,
-#nb-right {
+p {
     flex-shrink: 0;
 }
 
@@ -532,7 +530,24 @@ nav.container {
 }
 
 
-/****** nav middle ****************/
+/****** nav middle + nav right ****************/
+
+#nb-right{
+    width: 15vw;
+}
+
+#nb-right .btn{
+padding: 0.1vw;
+}
+
+#nb-right .row{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#audio-bar{
+    width: 30%;
+}
 
 
 #player-bar>*,
@@ -540,7 +555,6 @@ nav.container {
     display: inline-block;
     vertical-align: middle;
 }
-
 
 #player-bar {
     width: 100%;
@@ -552,15 +566,9 @@ nav.container {
     height: .4rem;
 }
 
-
-#audio-bar {
-    width: 100%;
-    height: 5px;
-}
-
 #audio-bar .bg-progress-bar {
     flex-grow: 1;
-    width: 50%;
+    width: 100%;
     height: .2rem;
 }
 

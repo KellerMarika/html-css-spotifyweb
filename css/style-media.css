@@ -16,7 +16,6 @@
         display: inline-block;
     }
 
-
     /************ASIDE**************/
 
     aside.container {
@@ -25,14 +24,22 @@
 
     #aside-nav li {
         text-align: left;
-
     }
-}
 
-/***** ARTICLE UPGRADE BAR *************/
 
-#upgrade.container {
-    left: 230px;
+    /***** ARTICLE UPGRADE BAR *************/
+
+    #upgrade.container {
+        left: 230px;
+    }
+
+    /***** MAIN SECTION-NAV ************** */
+
+    #sections-nav {
+        /* compensa il fixed di upgrade */
+        padding-top: 7rem;
+    }
+
 }
 
 /*****************************
@@ -59,11 +66,19 @@
         flex-basis: var(--prop-col_1-4_md);
     }
 
+
+
+
     /******** BOTTOM-NAVBAR***********/
 
     .song-btn .row.row-col {
         flex-direction: row;
     }
+    #nb-right .btn{
+        padding: 0.5vw;
+        }
+        
+
 
 }
 
@@ -93,4 +108,17 @@
     .col-lg_1-6 {
         flex-basis: var(--prop-col_1-6_lg);
     }
+
+    /****************************************/
+
+    /*********nav right************/
+    #nb-right {
+        width: 15vw;
+    }
+    #nb-right .btn{
+        padding: .8vw;
+        }
+        
+
+
 }
