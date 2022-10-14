@@ -384,10 +384,10 @@ svg {
 
 #upgrade.container {
     background-color: var(--bg_primary-color-dark);
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 65px;
-    right:0;
+    right: 0;
     z-index: 3;
 }
 
@@ -402,7 +402,7 @@ svg {
 /**********************************
         MAIN SECTION-NAV 
 ********************************* */
-#sections-nav{
+#sections-nav {
 
     /* compensa il fixed di upgrade */
     padding-top: 7rem;
@@ -518,12 +518,12 @@ nav.container {
 
 #nb-left,
 #nb-right {
-    flex-shrink:0;
+    flex-shrink: 0;
 }
 
 /******** nav left ****************/
 #nb-left .song-img {
-    width: 8vw;
+    width: 3rem;
     padding: 0 1vwem;
 }
 
@@ -534,15 +534,36 @@ nav.container {
 
 /****** nav middle ****************/
 
+
 #player-bar>*,
-#audio-options>* {
+#audio-bar>* {
     display: inline-block;
     vertical-align: middle;
 }
 
-/* .progress-container{
-    width: 60vw;
-} */
+
+#player-bar {
+    width: 100%;
+    text-align: center;
+}
+
+#player-bar .bg-progress-bar {
+    width: 50%;
+    height: .4rem;
+}
+
+
+#audio-bar {
+    width: 100%;
+    height: 5px;
+}
+
+#audio-bar .bg-progress-bar {
+    flex-grow: 1;
+    width: 50%;
+    height: .2rem;
+}
+
 
 .bg-progress-bar {
     flex-grow: 1;
@@ -558,12 +579,9 @@ nav.container {
     position: relative;
 }
 
-
-
 .progress-scroll {
     height: 300%;
     aspect-ratio: 1/1;
-
     position: absolute;
     right: 0;
     background-color: var(--txt_primary-color-light);
@@ -584,23 +602,9 @@ nav.container {
 
 }
 
-#player-bar {
-    width: 100%;
-    text-align: center;
-}
-
-#player-bar .bg-progress-bar {
-    width: 50%;
-    height: .4rem;
-}
 
 #player-btn .fa-circle-play:hover {
     transform: scale(115%);
 }
 
 /*****  nav right  **************/
-
-#audio-options .bg-progress-bar {
-    width: 5rem;
-    height: .2rem;
-}
