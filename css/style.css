@@ -16,14 +16,22 @@ body {
     height: 100vh;
 }
 
-
 a,
 a:hover,
 a:active {
     color: unset;
     text-decoration: none;
     display: inline-block;
+    cursor: pointer;
+}
+
+a {
     padding: 0.5rem;
+    ;
+}
+
+a:hover>* {
+    color: var(--txt_primary-color-light);
 }
 
 li {
@@ -248,6 +256,18 @@ h4,
     padding: 1.5rem 4rem;
 }
 
+.btn.dark {
+    color: var(--el_primary-color);
+}
+
+.btn.dark:hover {
+    color: var(--btn_primary-color);
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
 
 
 
@@ -285,7 +305,6 @@ aside.container {
     background-color: var(--bg_secondary-color);
     width: 65px;
     height: 100%;
-
 }
 
 #as-top.col,
@@ -306,7 +325,7 @@ aside.container {
     vertical-align: middle;
 }
 
-/* elrementi.... */
+/* elementi.... */
 
 .logo .xs-display,
 .logo .s-display {
@@ -317,14 +336,39 @@ aside.container {
     transform: translateX(-1.5rem);
 }
 
+
 #as-middle .fa-plus {
     color: var(--bg_secondary-color);
     background-color: var(--el_primary-color);
     padding: 10px;
 }
 
+#as-middle a:hover .fa-plus {
+    background-color: var(--txt_primary-color-light);
+}
+
 .install-icon {
     border: 1px solid var(--txt_primary-color);
+}
+
+.white_0 * {
+    color: var(--txt_primary-color-light);
+}
+
+svg {
+    color: var(--txt_primary-color);
+}
+
+.white:hover>svg {
+    color: var(--btn_primary-color);
+}
+
+.profile-img.round {
+    display: inline-block;
+}
+
+.profile-img.round svg {
+    background-color: var(--el_primary-color-dark);
 }
 
 /*****************************
@@ -346,6 +390,9 @@ aside.container {
     margin-bottom: 1rem;
 }
 
+#upgrade .btn.lg:hover {
+    transform: scale(105%);
+}
 
 
 /* ******MAIN SECTION-NAV *************/
@@ -357,6 +404,7 @@ aside.container {
 #sections-nav li {
     display: inline-block;
 }
+
 
 /* ******MAIN *************/
 
@@ -383,7 +431,8 @@ main #upgrade {
 main .card {
     text-align: center;
 }
-/*.... calc column width .....!!!!!!!!!*/
+
+/*.... calc column pwidth .....!!!!!!!!!*/
 
 /* è possibile creare delle variabili all'interno dei selettori ed esportarle poi all'occorrenza nelle diverse media-queries. 
 
@@ -402,6 +451,34 @@ main .card-container .row {
 .col-xs_1-2 {
     flex-basis: var(--prop-col_1-2_xs);
 }
+
+.card-img {
+    position: relative;
+}
+
+.card-img .img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000070;
+
+    opacity: 0;
+    transition: all .3s;
+}
+
+.img-overlay .fa-circle-play {
+    font-size: 4rem;
+    color: var(--txt_primary-color-light);
+}
+
+main .card-img:hover>.img-overlay {
+    opacity: 1;
+    backdrop-filter: blur(5px);
+}
+
 
 
 /*****************************
@@ -436,6 +513,10 @@ nav.container {
     padding-right: 0.8rem;
 }
 
+.song-info a:hover {
+    text-decoration: underline;
+}
+
 
 /****** nav middle ****************/
 
@@ -448,17 +529,47 @@ nav.container {
 
 .bg-progress-bar {
     background-color: var(--el_primary-color-dark);
+    border-radius: 20px;
 }
 
 .progress-bar {
     background-color: var(--txt_primary-color-light);
     width: 20%;
     height: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+
+.progress-scroll {
+
+    position: absolute;
+
+    right: 0;
+    width: 1.5em;
+    background-color: rgb(202, 8, 137);
+    transform: translateX(1em);
+}
+
+
+
+
+.progress-bar:hover {
+    background-color: var(--el_thirdary-color);
+
 }
 
 #player-bar .bg-progress-bar {
     width: 40vw;
-    height: .2rem;
+    height: .4rem;
+}
+
+
+
+
+#player-btn .btn:hover {
+    transform: scale(115%);
 }
 
 /*****  nav right  **************/
