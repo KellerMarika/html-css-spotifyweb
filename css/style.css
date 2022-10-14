@@ -253,7 +253,7 @@ h4,
 .btn.lg {
     border: 1px solid var(--btn_primary-color);
     border-radius: 3rem;
-    padding: 1.5rem 4rem;
+    padding: 1.2rem 3.5rem;
 }
 
 .btn.dark {
@@ -305,11 +305,6 @@ aside.container {
     background-color: var(--bg_secondary-color);
     width: 65px;
     height: 100%;
-}
-
-#aside-main-container .row {
-    overflow: auto;
-
 }
 
 #as-top.col,
@@ -389,13 +384,11 @@ svg {
 
 #upgrade.container {
     background-color: var(--bg_primary-color-dark);
-
-    /* 
     position: fixed; 
     top: 0;
     left: 65px;
     right:0;
-    z-index: 3; */
+    z-index: 3;
 }
 
 #upgrade .btn.lg {
@@ -406,8 +399,14 @@ svg {
     transform: scale(105%);
 }
 
+/**********************************
+        MAIN SECTION-NAV 
+********************************* */
+#sections-nav{
 
-/* ******MAIN SECTION-NAV *************/
+    /* compensa il fixed di upgrade */
+    padding-top: 7rem;
+}
 
 #sections-nav ul {
     text-align: center;
@@ -416,6 +415,7 @@ svg {
 #sections-nav li {
     display: inline-block;
 }
+
 
 
 /* ******MAIN *************/
@@ -518,13 +518,13 @@ nav.container {
 
 #nb-left,
 #nb-right {
-    flex-shrink: 0;
+    flex-shrink:0;
 }
 
 /******** nav left ****************/
 #nb-left .song-img {
-    width: 4vw;
-    padding-right: 0.8rem;
+    width: 8vw;
+    padding: 0 1vwem;
 }
 
 .song-info a:hover {
