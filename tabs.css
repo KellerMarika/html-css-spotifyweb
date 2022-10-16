@@ -1,0 +1,24 @@
+#evidenza{
+    background-color: blueviolet;
+
+}
+#podcast{
+    background-color: aquamarine;
+}
+#classification{
+    background-color: rgb(33, 114, 180);
+}
+
+#tabs ul{
+    text-align: center;
+}
+
+#tabs li,
+#tabs input,
+#tabs label{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* meccanismo tabs */
