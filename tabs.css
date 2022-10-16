@@ -11,19 +11,19 @@
     background-color: rgb(33, 114, 180);
 }
 
-.tabs {
+.tabset {
     justify-content: center;
 
 }
 
-
-
-
 /* meccanismo tabs */
+
 .tab-panel {
     display: none;
 }
 
-.tabset>input:first-child:checked~ #tab-panels-container .tab-panel:first-child {
+.tabset>input:first-of-type:checked~ #tab-panels-container>.col:first-child > .tab-panel,
+.tabset>input:nth-of-type(2):checked~ #tab-panels-container>.col:nth-of-type(2)> .tab-panel,
+.tabset>input:last-of-type:checked~ #tab-panels-container>.col:last-child > .tab-panel{
     display: block;
 }
