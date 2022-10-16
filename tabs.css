@@ -1,24 +1,29 @@
-#evidenza{
+#evidence {
     background-color: blueviolet;
 
 }
-#podcast{
+
+#podcast {
     background-color: aquamarine;
 }
-#classification{
+
+#classification {
     background-color: rgb(33, 114, 180);
 }
 
-#tabs ul{
-    text-align: center;
+.tabs {
+    justify-content: center;
+
 }
 
-#tabs li,
-#tabs input,
-#tabs label{
-    display: inline-block;
-    vertical-align: middle;
-}
+
 
 
 /* meccanismo tabs */
+.tab-panel {
+    display: none;
+}
+
+.tabset>input:first-child:checked~ #tab-panels-container .tab-panel:first-child {
+    display: block;
+}
