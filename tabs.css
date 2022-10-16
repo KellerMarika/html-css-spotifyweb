@@ -11,10 +11,32 @@
     background-color: rgb(33, 114, 180);
 }
 
+#mods {
+    background-color: burlywood;
+}
+
+#uncomeing {
+    background-color: brown;
+}
+
+#discover {
+    background-color: rgb(97, 165, 42);
+}
+
 .tabset {
     justify-content: center;
 
 }
+
+/*****************************
+        CLASS-UTILITIES
+******************************/
+
+label {
+    padding: .5rem;
+}
+
+
 
 /* meccanismo tabs */
 
@@ -22,8 +44,75 @@
     display: none;
 }
 
-.tabset>input:first-of-type:checked~ #tab-panels-container>.col:first-child > .tab-panel,
-.tabset>input:nth-of-type(2):checked~ #tab-panels-container>.col:nth-of-type(2)> .tab-panel,
-.tabset>input:last-of-type:checked~ #tab-panels-container>.col:last-child > .tab-panel{
+/* il primo/secondo/terzo ecc tag input:cheched attiva il primo/secondo/terzo ec   */
+
+.tabset>input:first-of-type:checked~#tab-panels-container>.col:first-child>.tab-panel,
+.tabset>input:nth-of-type(2):checked~#tab-panels-container>.col:nth-of-type(2)>.tab-panel,
+.tabset>input:nth-of-type(3):checked~#tab-panels-container>.col:nth-of-type(3)>.tab-panel,
+.tabset>input:nth-of-type(4):checked~#tab-panels-container>.col:nth-of-type(4)>.tab-panel,
+.tabset>input:nth-of-type(5):checked~#tab-panels-container>.col:nth-of-type(5)>.tab-panel,
+.tabset>input:last-of-type:checked~#tab-panels-container>.col:last-child>.tab-panel {
     display: block;
+}
+
+.tabset>input:checked~#tab-panels-container {
+
+    /* questa cosa è sporca e non mi piace___________________________chiedi */
+    display:flex;
+    height: 470px;
+
+}
+
+#sections-nav.tabset {
+
+    align-items: flex-start;
+}
+
+#tab-panels-container {
+    background-color: antiquewhite;
+    position:relative;
+    top: 0px;
+    width: 100%;
+    display: none;
+
+}
+
+#tab-panels-container .tab-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.tabset input {
+    /* ____________________________________________!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    non metto display:none, perchè altrimenti non mi prende il :focus sull'input e non posso stilizzare il label.
+    position absolute per rimuoverlo dal flusso*/
+    position: absolute;
+    /* lo sposto al di fuori del viewport così non risulterà mai visibile */
+    left: -110vw;
+    /* _______________________________________________________________________________ */
+}
+
+.tabset label {
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.tabset label:hover,
+.tabset>input:focus+label,
+.tabset>input:checked+label {
+    color: white;
+}
+
+.tabset>input:checked+label>.nav-line {
+    transform: scaleX(5);
+    opacity: 1;
+}
+
+#sections-nav label:hover>.nav-line {
+    transform: scaleX(5);
+    opacity: 1;
+
 }

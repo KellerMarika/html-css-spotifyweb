@@ -406,6 +406,8 @@ svg {
     padding-top: 7rem;
 }
 
+/* ____________________________inutile con tabset */
+
 #sections-nav ul {
     text-align: center;
 }
@@ -413,6 +415,7 @@ svg {
 #sections-nav li {
     display: inline-block;
 }
+/* _______________________________________________ */
 
 .nav-line{
     display: inline-block;
@@ -422,15 +425,17 @@ svg {
     background-color: var(--el_thirdary-color);
     text-align: center;
     transition: transform .4s, opaciry .1s;
-    opacity: 0;
+    opacity: 0; 
 
 }
+
+/* ____________________________inutile con tabset */
 #sections-nav a:hover>.nav-line{
     transform: scaleX(5);
     opacity: 1;
 
 }
-
+/* _______________________________________________ */
 
 
 
