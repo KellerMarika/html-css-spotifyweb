@@ -101,6 +101,8 @@ label {
 #max-container .card-container .row .col {
     flex-basis: var(--prop-col_1-6_lg);
   
+    max-width: var(--prop-col_1-6_lg);
+  
     flex-shrink: 0;
     flex-grow: 1;
 }
