@@ -87,17 +87,20 @@ label {
 
 /************** col scroll orizzontale *************************************/
 
-.card-container .row {
+#max-container .card-container .row {
     flex-wrap: nowrap;
     overflow: auto;
     --gap: 1.5rem;
     gap: var(--gap);
+    --prop-col_1-6_lg: calc((100% - (var(--gap) * 5)) / 6);
 
 }
 
 /*_______________________________________________stranger things è più grandina in certi punti(font?) ________________ */
 
-.card-container .row .col {
+#max-container .card-container .row .col {
+    flex-basis: var(--prop-col_1-6_lg);
+  
     flex-shrink: 0;
     flex-grow: 1;
 }
