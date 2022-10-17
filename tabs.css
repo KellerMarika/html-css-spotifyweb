@@ -1,27 +1,27 @@
-#evidence {
-    background-color: blueviolet;
+/* #evidence {
+   color: blueviolet;
 
 }
 
 #podcast {
-    background-color: aquamarine;
+    color: aquamarine;
 }
 
 #classification {
-    background-color: rgb(33, 114, 180);
+    color: rgb(33, 114, 180);
 }
 
 #mods {
-    background-color: burlywood;
+    color: burlywood;
 }
 
 #uncomeing {
-    background-color: brown;
+   color: brown;
 }
 
 #discover {
-    background-color: rgb(97, 165, 42);
-}
+    color: rgb(97, 165, 42);
+} */
 
 .tabset {
     justify-content: center;
@@ -55,32 +55,22 @@ label {
     display: block;
 }
 
-.tabset>input:checked~#tab-panels-container {
-
-    /* questa cosa è sporca e non mi piace___________________________chiedi */
-    display:flex;
-    height: 470px;
-
-}
-
 #sections-nav.tabset {
-
     align-items: flex-start;
+    padding-bottom: 2rem;
 }
 
 #tab-panels-container {
-    background-color: antiquewhite;
-    position:relative;
     top: 0px;
     width: 100%;
-    display: none;
-
 }
 
-#tab-panels-container .tab-panel {
-    position: absolute;
+#tab-panels-container>* {
+    padding: 0;
+    width: 100%;
     top: 0;
     left: 0;
+
 }
 
 
@@ -114,5 +104,10 @@ label {
 #sections-nav label:hover>.nav-line {
     transform: scaleX(5);
     opacity: 1;
+
+}
+
+#max-container #aside-main-container.col {
+    overflow: unset;
 
 }
